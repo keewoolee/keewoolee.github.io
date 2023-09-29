@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-[[Curriculum Vitae]](https://keewoolee.github.io/assets/pdf/CV_KeewooLee.pdf){:target="\_blank"}
+[[Curriculum Vitae]](/assets/pdf/CV_KeewooLee.pdf){:target="\_blank"}
 
 I am an incoming postdoctoral researcher studying cryptography at UC Berkeley, hosted by [Prof. Sanjam Garg](https://people.eecs.berkeley.edu/~sanjamg/){:target="\_blank"}. In the meantime, I am working as a freelancer at [CryptoLab](https://www.cryptolab.co.kr/en/home/){:target="\_blank"}, a homomorphic encryption startup. I obtained my Ph.D. in Mathematical Sciences at [Seoul National University](https://en.wikipedia.org/wiki/Seoul_National_University){:target="\_blank"}, advised by [Prof. Jung Hee Cheon](http://www.math.snu.ac.kr/~jhcheon/xe2/){:target="\_blank"}. 
 

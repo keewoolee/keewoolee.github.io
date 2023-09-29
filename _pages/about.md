@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: ✉️ keewoole@gmail.com
+subtitle: ✉️ keewoole@gmail.com  
 
 profile:
   align: right

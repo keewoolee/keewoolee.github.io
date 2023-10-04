@@ -1,156 +1,9 @@
 ---
 ---
 
-@inproceedings{dCL24,
-    abbr={USENIX Sec},
-    author       = {{de Castro}, Leo and Lee, Keewoo},
-    title        = {VeriSimplePIR: Verifiability in SimplePIR at No Online Cost for Honest Servers},
-    booktitle={USENIX Security Symposium},
-    year         = {2024},
-    manuscript={false}
-}
+@string{aps = {American Physical Society,}}
 
-@inproceedings{CL22,
-    abbr={Eurocrypt},
-    author       = {Cheon, Jung Hee and Lee, Keewoo},
-    title        = {Limits of Polynomial Packings for $Z_\{p^k\}$ and $F_\{p^k\}$},
-    booktitle={Annual International Conference on the Theory and Applications of Cryptographic Techniques (Eurocrypt)},
-    year         = {2022},
-    manuscript={false},
-    video={https://youtu.be/5sQyNshWu3g},
-    eprint = {2021/1033},
-    abstract={We formally define polynomial packing methods and initiate a unified study of related concepts in various contexts of cryptography. This includes homomorphic encryption (HE) packing and reverse multiplication-friendly embedding (RMFE) in information-theoretically secure multi-party computation (MPC). We prove several upper bounds or impossibility results on packing methods for $Z_\{p^k\}$ or $F_\{p^k\}$-messages into $Z_\{p^t\}[x]/f(x)$ regarding (i) packing density, (ii) level-consistency, and (iii) surjectivity. These results have implications on recent development of HE-based MPC over Z2k secure against actively corrupted majority and provide new proofs for upper bounds on RMFE.},
-    slides={CL22_slides.pdf}
-}
-
-@article{cheon2021scaled,
-  abbr={JKMS},
-  title={On the Scaled Inverse of $(x^i-x^j)$ modulo Cyclotomic Polynomial of the form \Phi _\{p^s\}(x) or \Phi _\{p^s q^t\}(x)},
-  author={Cheon, Jung Hee and Kim, Dongwoo and Kim, Duhyeong and Lee, Keewoo},
-  journal={Journal of the Korean Mathematical Society},
-  year={2022},
-  url={https://jkms.kms.or.kr/journal/view.html?uid=2829&vmd=Full},
-  manuscript={false},
-  arxiv={2106.01742},
-  abstract={The scaled inverse of a nonzero element $a(x)\in Z[x]/f(x)$, where $f(x)$ is an irreducible polynomial over $Z$, is the element $b(x)\in Z[x]/f(x)$ such that $a(x)b(x)=c mod f(x)$ for the smallest possible positive integer scale $c$. In this paper, we investigate the scaled inverse of $(x^i-x^j)$ modulo cyclotomic polynomial of the form $\Phi _\{p^s\}(x)$ or $\Phi _\{p^s q^t\}(x)$, where $p, q$ are primes with $p<q$ and $s, t$ are positive integers. Our main results are that the coefficient size of the scaled inverse of $(x^i-x^j)$ is bounded by $p-1$ with the scale $p$ modulo $\Phi _\{p^s\}(x)$, and is bounded by $q-1$ with the scale not greater than $q$ modulo $\Phi _\{p^s q^t\}(x)$. Previously, the analogous result on cyclotomic polynomials of the form $\Phi _\{2^n\}(x)$ gave rise to many lattice-based cryptosystems, especially, zero-knowledge proofs. Our result provides more flexible choice of cyclotomic polynomials in such cryptosystems. Along the way of proving the theorems, we also prove several properties of $\{x^k\}$ in $Z[x]/\Phi _\{pq\}(x)$ which might be of independent interest.}
-}
-
-@inproceedings{cheon2021mhz2k,
-  abbr={Crypto},
-  title={MHz2k: MPC from HE over Z2k with New Packing, Simpler Reshare, and Better ZKP},
-  author={Cheon, Jung Hee and Kim, Dongwoo and Lee, Keewoo},
-  booktitle={Annual International Cryptology Conference (Crypto)},
-  pages={426--456},
-  organization={Springer},
-  year={2021},
-  manuscript={false},
-  eprint = {2021/1383},
-  video={https://youtu.be/Hi6pU7eT0k4},
-  abstract={We propose a multi-party computation (MPC) protocol over Z2k secure against actively corrupted majority from somewhat homomorphic encryption. The main technical contributions are: (i) a new efficient packing method for Z2k-messages in lattice-based somewhat homomorphic encryption schemes, (ii) a simpler reshare protocol for level-dependent packings, (iii) a more efficient zero-knowledge proof of plaintext knowledge on cyclotomic rings $Z[X]/\Phi _M(X)$ with M being a prime. Integrating them, our protocol shows from 2.2x upto 4.8x improvements in amortized communication costs compared to the previous best results. Our techniques not only improve the efficiency of MPC over Z2k considerably, but also provide a toolkit that can be leveraged when designing other cryptographic primitives over Z2k.},
-  slides={CKL21_slides.pdf}
-}
-
-@article{jung2021accelerating,
-  abbr={IEEE Access},
-  title={*Accelerating Fully Homomorphic Encryption Through Architecture-Centric Analysis and Optimization},
-  author={Jung, Wonkyung and Lee, Eojin and Kim, Sangpyo and Kim, Jongmin and Kim, Namhoon and Lee, Keewoo and Min, Chohong and Cheon, Jung Hee and Ahn, Jung Ho},
-  journal={IEEE Access},
-  volume={9},
-  pages={98772--98789},
-  year={2021},
-  publisher={IEEE},
-  manuscript={false},
-  arxiv={2003.04510},
-  abstract={Homomorphic Encryption (HE) draws a significant attention as a privacy-preserving way for cloud computing because it allows computation on encrypted messages called ciphertexts. Among numerous HE schemes proposed, HE for Arithmetic of Approximate Numbers (HEAAN) is rapidly gaining popularity across a wide range of applications because it supports messages that can tolerate approximate computation with no limit on the number of arithmetic operations applicable to the corresponding ciphertexts. A critical shortcoming of HE is the high computation complexity of ciphertext arithmetic; especially, HE multiplication (HE Mul) is more than 10,000 times slower than the corresponding multiplication between unencrypted messages. This leads to a large body of HE acceleration studies, including ones exploiting FPGAs; however, those did not conduct a rigorous analysis of computational complexity and data access patterns of HE Mul. Moreover, the proposals mostly focused on designs with small parameter sizes, making it difficult to accurately estimate their performance in conducting a series of complex arithmetic operations. In this paper, we first describe how HE Mul of HEAAN is performed in a manner friendly to computer architects. Then we conduct a disciplined analysis on its computational and memory access characteristics, through which we (1) extract parallelism in the key functions composing HE Mul and (2) demonstrate how to effectively map the parallelism to the popular parallel processing platforms, multicore CPUs and GPUs, by applying a series of optimization techniques such as transposing matrices and pinning data to threads. This leads to the performance improvement of HE Mul on a CPU and a GPU by 42.9x and 134.1x, respectively, over the single-thread reference HEAAN running on a CPU. The conducted analysis and optimization would set a new foundation for future HE acceleration research.}
-}
-
-@inproceedings{kim2020hardware,
-  abbr={FCCM},
-  title={*Hardware Architecture of a Number Theoretic Transform for a Bootstrappable RNS-based Homomorphic Encryption Scheme},
-  author={Kim, Sunwoong and Lee, Keewoo and Cho, Wonhee and Nam, Yujin and Cheon, Jung Hee and Rutenbar, Rob A},
-  booktitle={2020 IEEE 28th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)},
-  pages={56--64},
-  year={2020},
-  organization={IEEE},
-  manuscript={false}
-}
-
-@article{amors2020gimme,
-  title={Gimme That Model!: A Trusted ML Model Trading Protocol},
-  author={Amorós, Laia and Hafiz, Syed Mahbub and Lee, Keewoo and Tol, M Caner},
-  journal={Protecting Privacy through Homomorphic Encryption},
-  year={2021},
-  book={true},
-  arxiv={2003.00610},
-  video={https://youtu.be/E8PPHkTQzYc},
-  abstract={We propose a HE-based protocol for trading ML models and describe possible improvements to the protocol to make the overall transaction more efficient and secure.},
-  url={https://link.springer.com/book/9783030772864}
-}
-
-@inproceedings{cheon2019numerical,
-  abbr={Asiacrypt},
-  title={Numerical Method for Comparison on Homomorphically Encrypted Numbers},
-  author={Cheon, Jung Hee and Kim, Dongwoo and Kim, Duhyeong and Lee, Hun Hee and Lee, Keewoo},
-  booktitle={International Conference on the Theory and Application of Cryptology and Information Security (Asiacrypt)},
-  pages={415--445},
-  year={2019},
-  organization={Springer, Cham},
-  manuscript={false},
-  eprint={2019/417}
-}
-
-@inproceedings{kim2019fpga,
-  abbr={ReConFig},
-  title={*FPGA-based Accelerators of Fully Pipelined Modular Multipliers for Homomorphic Encryption},
-  author={Kim, Sunwoong and Lee, Keewoo and Cho, Wonhee and Cheon, Jung Hee and Rutenbar, Rob A},
-  booktitle={2019 International Conference on ReConFigurable Computing and FPGAs (ReConFig)},
-  pages={1--8},
-  year={2019},
-  organization={IEEE},
-  manuscript={false}
-}
-
-@article{park2019secure,
-  abbr={BMC},
-  title={*A Secure SNP Panel Scheme using Homomorphically Encrypted K-mers without SNP Calling on the User Side},
-  author={Park, Sungjoon and Kim, Minsu and Seo, Seokjun and Hong, Seungwan and Han, Kyoohyung and Lee, Keewoo and Cheon, Jung Hee and Kim, Sun},
-  journal={BMC genomics},
-  volume={20},
-  number={2},
-  pages={163--174},
-  year={2019},
-  publisher={BioMed Central},
-  manuscript={false}
-}
-
-@article{kim2018logistic,
-  abbr={BMC},
-  title={*Logistic Regression Model Training based on the Approximate Homomorphic Encryption},
-  author={Kim, Andrey and Song, Yongsoo and Kim, Miran and Lee, Keewoo and Cheon, Jung Hee},
-  journal={BMC medical genomics},
-  volume={11},
-  number={4},
-  pages={23--31},
-  year={2018},
-  publisher={BioMed Central},
-  manuscript={false},
-  eprint={2018/254}
-}
-
-@inproceedings{cheon2017privacy,
-  abbr={WAHC},
-  title={Privacy-Preserving Computations of Predictive Medical Models with Minimax Approximation and Non-Adjacent Form},
-  author={Cheon, Jung Hee and Jeong, Jinhyuck and Lee, Joohee and Lee, Keewoo},
-  booktitle={International Conference on Financial Cryptography and Data Security},
-  pages={53--74},
-  year={2017},
-  organization={Springer},
-  manuscript={false}
-}
-
-string{aps = {American Physical Society,}}
-
-book{einstein1956investigations,
+@book{einstein1956investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},
   author={Einstein, Albert},
@@ -159,7 +12,7 @@ book{einstein1956investigations,
   preview={brownian-motion.gif}
 }
 
-article{einstein1950meaning,
+@article{einstein1950meaning,
   abbr={AJP},
   bibtex_show={true},
   title={The meaning of relativity},
@@ -172,7 +25,7 @@ article{einstein1950meaning,
   publisher={American Association of Physics Teachers}
 }
 
-article{PhysRev.47.777,
+@article{PhysRev.47.777,
   abbr={PhysRev},
   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
   author={Einstein, A. and Podolsky, B. and Rosen, N.},
@@ -194,7 +47,7 @@ article{PhysRev.47.777,
   selected={true}
 }
 
-article{einstein1905molekularkinetischen,
+@article{einstein1905molekularkinetischen,
   title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
   author={Einstein, A.},
   journal={Annalen der physik},
@@ -205,7 +58,7 @@ article{einstein1905molekularkinetischen,
   publisher={Wiley Online Library}
 }
 
-article{einstein1905movement,
+@article{einstein1905movement,
   abbr={Ann. Phys.},
   title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
   author={Einstein, A.},
@@ -215,13 +68,13 @@ article{einstein1905movement,
   year={1905}
 }
 
-article{einstein1905electrodynamics,
+@article{einstein1905electrodynamics,
   title={On the electrodynamics of moving bodies},
   author={Einstein, A.},
   year={1905}
 }
 
-book{przibram1967letters,
+@book{przibram1967letters,
   bibtex_show={true},
   title={Letters on wave mechanics},
   author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},

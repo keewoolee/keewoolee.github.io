@@ -1,65 +1,34 @@
-"Ahn":
-  - firstname: ["Jung Ho"]
-    url: http://scale.snu.ac.kr/members
+"Adams":
+  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-"Cheon":
-  - firstname: ["Jung Hee"]
-    url: http://www.math.snu.ac.kr/~jhcheon/xe2/
+"Podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-"de Castro":
-  - firstname: ["Leo"]
-    url: https://scholar.google.com/citations?user=9ZuahUAAAAAJ&hl=en
+"Rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-"Hafiz":
-  - firstname: ["Syed Mahbub"]
-    url: https://web.cs.ucdavis.edu/~shafiz/
+"Bach": 
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
-"Han":
-  - firstname: ["Kyoohyung"]
-    url: https://kyoohyunghan.github.io/
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-"Hong":
-  - firstname: ["Seungwan"]
-    url: https://swanhong.github.io/
+"Przibram":
+  - firstname: ["Karl"]
+    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
 
-"Kim": 
-  - firstname: ["Duhyeong"]
-    url: https://du1204.github.io/
+"Schrödinger":
+  - firstname: ["Erwin"]
+    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
 
-  - firstname: ["Dongwoo"]
-    url: https://dwkim606.github.io/
+"Lorentz":
+  - firstname: ["Hendrik Antoon"]
+    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
 
-  - firstname: ["Miran"]
-    url: https://k-miran.github.io/
-
-  - firstname: ["Sun"]
-    url: https://bhi-kimlab.github.io/members/sun_kim.html
-
-  - firstname: ["Sunwoong"]
-    url: https://sites.google.com/view/sunwoong/
-
-"Lee":
-  - firstname: ["Eojin"]
-    url: https://sites.google.com/view/ejlee-private
-  - firstname: ["Hun Hee"]
-    url: http://www.math.snu.ac.kr/~hhlee/
-
-"Min":
-  - firstname: ["Chohong"]
-    url: http://math.ewha.ac.kr/~chohong/
-
-"Nam":
-  - firstname: ["Yujin"]
-    url: https://ujinnam.github.io/
-
-"Rutenbar":
-  - firstname: ["Rob A"]
-    url: https://www.rutenbar.pitt.edu/
-
-"Song":
-  - firstname: ["Yongsoo"]
-    url: https://yongsoosong.github.io/
-
-"Tol":
-  - firstname: ["M Caner"]
-    url: https://canertol.com/
+"Planck":
+  - firstname: ["Max"]
+    url: https://en.wikipedia.org/wiki/Max_Planck

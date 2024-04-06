@@ -6,6 +6,10 @@
   - firstname: ["Jung Hee"]
     url: http://www.math.snu.ac.kr/~jhcheon/xe2/
 
+"Cho":
+  - firstname: ["Wonhee"]
+    url: https://scholar.google.com/citations?user=Xlc-kD0AAAAJ&hl=en&authuser=1&oi=ao
+
 "de Castro":
   - firstname: ["Leo"]
     url: https://scholar.google.com/citations?user=9ZuahUAAAAAJ&hl=en
@@ -23,14 +27,26 @@
     url: https://swanhong.github.io/
 
 "Kim": 
+  - firstname: ["Andrey"]
+    url: https://scholar.google.com/citations?user=uY_xNHwAAAAJ&hl=en
+
   - firstname: ["Duhyeong"]
     url: https://du1204.github.io/
 
   - firstname: ["Dongwoo"]
     url: https://dwkim606.github.io/
 
+  - firstname: ["Jongmin"]
+    url: https://scholar.google.com/citations?hl=en&authuser=1&user=Nu3Bn0YAAAAJ
+ 
+  - firstname: ["Minsu"]
+    url: https://scholar.google.com/citations?user=9LShzG8AAAAJ&hl=en&authuser=1
+ 
   - firstname: ["Miran"]
     url: https://k-miran.github.io/
+
+  - firstname: ["Sangpyo"]
+    url: https://scholar.google.com/citations?user=Y8j-o-sAAAAJ&hl=en&authuser=1&oi=ao
 
   - firstname: ["Sun"]
     url: https://bhi-kimlab.github.io/members/sun_kim.html
@@ -41,9 +57,13 @@
 "Lee":
   - firstname: ["Eojin"]
     url: https://sites.google.com/view/ejlee-private
+
   - firstname: ["Hun Hee"]
     url: http://www.math.snu.ac.kr/~hhlee/
 
+  - firstname: ["Joohee"]
+    url: https://sungshincrypto.github.io/
+    
 "Min":
   - firstname: ["Chohong"]
     url: http://math.ewha.ac.kr/~chohong/
@@ -52,9 +72,17 @@
   - firstname: ["Yujin"]
     url: https://ujinnam.github.io/
 
+"Park":
+  - firstname: ["Sungjoon"]
+    url: https://scholar.google.com/citations?hl=en&authuser=1&user=jN0nExwAAAAJ
+
 "Rutenbar":
   - firstname: ["Rob A"]
     url: https://www.rutenbar.pitt.edu/
+
+"Seo":
+  - firstname: ["Seokjun"]
+    url: https://scholar.google.com/citations?user=i8qD1XoAAAAJ&hl=en&authuser=1&oi=ao
 
 "Song":
   - firstname: ["Yongsoo"]

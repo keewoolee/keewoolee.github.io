@@ -8,15 +8,15 @@
 
 "Cho":
   - firstname: ["Wonhee"]
-    url: https://scholar.google.com/citations?user=Xlc-kD0AAAAJ&hl=en&authuser=1&oi=ao
+    url: https://scholar.google.com/citations?user=Xlc-kD0AAAAJ
 
 "de Castro":
   - firstname: ["Leo"]
-    url: https://scholar.google.com/citations?user=9ZuahUAAAAAJ&hl=en
+    url: https://scholar.google.com/citations?user=9ZuahUAAAAAJ
 
 "Hafiz":
   - firstname: ["Syed Mahbub"]
-    url: https://web.cs.ucdavis.edu/~shafiz/
+    url: https://smhafiz.github.io/
 
 "Han":
   - firstname: ["Kyoohyung"]
@@ -28,7 +28,7 @@
 
 "Kim": 
   - firstname: ["Andrey"]
-    url: https://scholar.google.com/citations?user=uY_xNHwAAAAJ&hl=en
+    url: https://scholar.google.com/citations?user=uY_xNHwAAAAJ
 
   - firstname: ["Duhyeong"]
     url: https://du1204.github.io/
@@ -37,16 +37,16 @@
     url: https://dwkim606.github.io/
 
   - firstname: ["Jongmin"]
-    url: https://scholar.google.com/citations?hl=en&authuser=1&user=Nu3Bn0YAAAAJ
+    url: https://scholar.google.com/citations?user=Nu3Bn0YAAAAJ
  
   - firstname: ["Minsu"]
-    url: https://scholar.google.com/citations?user=9LShzG8AAAAJ&hl=en&authuser=1
+    url: https://scholar.google.com/citations?user=9LShzG8AAAAJ
  
   - firstname: ["Miran"]
     url: https://k-miran.github.io/
 
   - firstname: ["Sangpyo"]
-    url: https://scholar.google.com/citations?user=Y8j-o-sAAAAJ&hl=en&authuser=1&oi=ao
+    url: https://scholar.google.com/citations?user=Y8j-o-sAAAAJ
 
   - firstname: ["Sun"]
     url: https://bhi-kimlab.github.io/members/sun_kim.html
@@ -68,13 +68,19 @@
   - firstname: ["Chohong"]
     url: http://math.ewha.ac.kr/~chohong/
 
+  - firstname: ["Seonhong"]
+    url: https://snu-lukemin.github.io/
+
 "Nam":
   - firstname: ["Yujin"]
     url: https://ujinnam.github.io/
 
 "Park":
   - firstname: ["Sungjoon"]
-    url: https://scholar.google.com/citations?hl=en&authuser=1&user=jN0nExwAAAAJ
+    url: https://scholar.google.com/citations?user=jN0nExwAAAAJ
+
+  - firstname: ["Jai Hyun"]
+    url: https://jaihyunp.github.io/
 
 "Rutenbar":
   - firstname: ["Rob A"]
@@ -82,7 +88,7 @@
 
 "Seo":
   - firstname: ["Seokjun"]
-    url: https://scholar.google.com/citations?user=i8qD1XoAAAAJ&hl=en&authuser=1&oi=ao
+    url: https://scholar.google.com/citations?user=i8qD1XoAAAAJ
 
 "Song":
   - firstname: ["Yongsoo"]
@@ -91,3 +97,7 @@
 "Tol":
   - firstname: ["M Caner"]
     url: https://canertol.com/
+
+"Yeo":
+  - firstname: ["Yongdong"]
+    url: https://scholar.google.com/citations?user=-J0oezwAAAAJ

@@ -1,6 +1,24 @@
 ---
 ---
 
+@article{dCKKLMS24,
+  title={More Efficient Lattice-based {OLE} from Circuit-private Linear {HE} with Polynomial Overhead},
+  author = {{de Castro}, Leo and Duhyeong Kim and Miran Kim and Keewoo Lee and Seonhong Min and Yongsoo Song},
+  manuscript={true},
+  year={2024},
+  eprint={2024/1534},
+  abstract={We present a new and efficient method to obtain circuit privacy for lattice-based linearly homomorphic encryptions (LHE). In particular, our method does not involve noise-flooding with exponetially large errors or iterative bootstrapping. As a direct result, we obtain a semi-honest oblivious linear evaluation (OLE) protocol with the same efficiency, reducing the communication cost of the prior state of the art by 50%. Consequently, the amortized time of our protocol improves the prior work by 33% under 100Mbps network setting. Our semi-honest OLE is the first to achieve both concrete efficiency and asymptotic quasi-optimality. Together with an extension of the recent zero-knowledge proof of plaintext knowledge, our LHE yields actively-secure OLE with 2.7x reduced communication from the prior work. When applied to Overdrive (Eurocrypt '18), an MPC preprocessing protocol, our method provides 1.4x improvement in communication over the state of the art.}
+}
+
+@article{CLPY24,
+  title={SIMD-Aware Homomorphic Compression and Application to Private Database Query},
+  author = {{Jung Hee} Cheon and Keewoo Lee and {Jai Hyun} Park and Yongdong Yeo},
+  manuscript={true},
+  year={2024},
+  arxiv={2408.17063},
+  abstract={In a private database query scheme (PDQ), a server maintains a database, and users send queries to retrieve records of interest from the server while keeping their queries private. A crucial step in PDQ protocols based on homomorphic encryption is homomorphic compression, which compresses encrypted sparse vectors consisting of query results. In this work, we propose a new homomorphic compression scheme with PDQ as its main application. Unlike existing approaches, our scheme (i) can be efficiently implemented by fully exploiting homomorphic SIMD technique and (ii) enjoys both asymptotically optimal compression rate and asymptotically good decompression complexity. Experimental results show that our approach is 4.7x to 33.2x faster than the previous best results.}
+}
+
 @article{Lee24,
   abbr={IACR CiC},
   title={Bit Security as Cost to Demonstrate Advantage},
@@ -9,7 +27,8 @@
   year={2024},
   manuscript={false},
   eprint={2022/655},
-  abstract={We revisit the question of what the definition of bit security should be, previously answered by Micciancio-Walter (Eurocrypt 2018) and Watanabe-Yasunaga (Asiacrypt 2021). Our new definition is simple, but (i) captures both search and decision primitives in a single framework like Micciancio-Walter, and (ii) has a firm operational meaning like Watanabe-Yasunaga. It also matches intuitive expectations and can be well-formulated regarding Hellinger distance. To support and justify the new definition, we prove several classic security reductions with respect to our bit security. We also provide pathological examples that indicate the ill-definedness of bit security defined in Micciancio-Walter and Watanabe-Yasunaga.}
+  abstract={We revisit the question of what the definition of bit security should be, previously answered by Micciancio-Walter (Eurocrypt 2018) and Watanabe-Yasunaga (Asiacrypt 2021). Our new definition is simple, but (i) captures both search and decision primitives in a single framework like Micciancio-Walter, and (ii) has a firm operational meaning like Watanabe-Yasunaga. It also matches intuitive expectations and can be well-formulated regarding Hellinger distance. To support and justify the new definition, we prove several classic security reductions with respect to our bit security. We also provide pathological examples that indicate the ill-definedness of bit security defined in Micciancio-Walter and Watanabe-Yasunaga.},
+  url = {https://doi.org/10.62056/an5txol7}
 }
 
 @inproceedings{dCL24,

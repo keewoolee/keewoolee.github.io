@@ -1,6 +1,16 @@
 ---
 ---
 
+@article{LY24,
+  title={SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression},
+  author = {Keewoo Lee and Yongdong Yeo},
+  manuscript={true},
+  year={2024},
+  eprint={2024/1814},
+  code={https://github.com/keewoolee/SophOMR},
+  abstract={Privacy-preserving blockchains and private messaging services that ensure receiver-privacy face a significant UX challenge: each client must scan every payload posted on the public bulletin board individually to avoid missing messages intended for them. Oblivious Message Retrieval (OMR) addresses this issue by securely outsourcing this expensive scanning process to a service provider using Homomorphic Encryption (HE). In this work, we propose a new OMR scheme that substantially improves upon the previous state-of-the-art, PerfOMR (USENIX Security'24). Our implementation demonstrates reductions of 3.3x in runtime, 2.2x in digest size, and 1.5x in key size, in a scenario with 65536 payloads (each 612 bytes), of which up to 50 are pertinent. At the core of these improvements is a new homomorphic compression mechanism, where ciphertexts of length proportional to the number of total payloads are compressed into a digest whose length is proportional to the upper bound on the number of pertinent payloads. Unlike previous approaches, our scheme fully exploits the native homomorphic SIMD structure of the underlying HE scheme, significantly enhancing efficiency. In the setting described above, our compression scheme achieves 7.4x speedup compared to PerfOMR.}
+}
+
 @article{dCKKLMS24,
   title={More Efficient Lattice-based {OLE} from Circuit-private Linear {HE} with Polynomial Overhead},
   author = {{de Castro}, Leo and Duhyeong Kim and Miran Kim and Keewoo Lee and Seonhong Min and Yongsoo Song},

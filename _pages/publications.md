@@ -28,7 +28,7 @@ Authors are listed in alphabetical order by last name, unless an asterick(\*) is
 
 <div class="publications">
   
-  <h1>manuscripts</h1>
+  <h1>preprints</h1>
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[manuscript=true]* %}
 
 </div>

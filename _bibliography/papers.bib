@@ -1,14 +1,14 @@
 ---
 ---
 
-@article{LY24,
-  title={SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression},
-  author = {Keewoo Lee and Yongdong Yeo},
+@article{FGLW25,
+  title={Bypassing Prompt Guards in Production with Controlled-Release Prompting},
+  author = {Jaiden Fairoze and Sanjam Garg and Keewoo Lee and Mingyuan Wang},
   manuscript={true},
-  year={2024},
-  eprint={2024/1814},
-  code={https://github.com/keewoolee/SophOMR},
-  abstract={Privacy-preserving blockchains and private messaging services that ensure receiver-privacy face a significant UX challenge: each client must scan every payload posted on the public bulletin board individually to avoid missing messages intended for them. Oblivious Message Retrieval (OMR) addresses this issue by securely outsourcing this expensive scanning process to a service provider using Homomorphic Encryption (HE). In this work, we propose a new OMR scheme that substantially improves upon the previous state-of-the-art, PerfOMR (USENIX Security'24). Our implementation demonstrates reductions of 3.3x in runtime, 2.2x in digest size, and 1.5x in key size, in a scenario with 65536 payloads (each 612 bytes), of which up to 50 are pertinent. At the core of these improvements is a new homomorphic compression mechanism, where ciphertexts of length proportional to the number of total payloads are compressed into a digest whose length is proportional to the upper bound on the number of pertinent payloads. Unlike previous approaches, our scheme fully exploits the native homomorphic SIMD structure of the underlying HE scheme, significantly enhancing efficiency. In the setting described above, our compression scheme achieves 7.4x speedup compared to PerfOMR.}
+  year={2025},
+  arxiv={510.01529},
+  abstract={As large language models (LLMs) advance, ensuring AI safety and alignment is paramount. One popular approach is prompt guards, lightweight mechanisms designed to filter malicious queries while being easy to implement and update. In this work, we introduce a new attack that circumvents such prompt guards, highlighting their limitations. Our method consistently jailbreaks production models while maintaining response quality, even under the highly protected chat interfaces of Google Gemini (2.5 Flash/Pro), DeepSeek Chat (DeepThink), Grok (3), and Mistral Le Chat (Magistral). The attack exploits a resource asymmetry between the prompt guard and the main LLM, encoding a jailbreak prompt that lightweight guards cannot decode but the main model can. This reveals an attack surface inherent to lightweight prompt guards in modern LLM architectures and underscores the need to shift defenses from blocking malicious inputs to preventing malicious outputs. We additionally identify other critical alignment issues, such as copyrighted data extraction, training data extraction, and malicious response leakage during thinking.
+  }
 }
 
 @article{dCKKLMS24,
@@ -29,6 +29,44 @@
   abstract={In a private database query scheme (PDQ), a server maintains a database, and users send queries to retrieve records of interest from the server while keeping their queries private. A crucial step in PDQ protocols based on homomorphic encryption is homomorphic compression, which compresses encrypted sparse vectors consisting of query results. In this work, we propose a new homomorphic compression scheme with PDQ as its main application. Unlike existing approaches, our scheme (i) can be efficiently implemented by fully exploiting homomorphic SIMD technique and (ii) enjoys both asymptotically optimal compression rate and asymptotically good decompression complexity. Experimental results show that our approach is 4.7x to 33.2x faster than the previous best results.}
 }
 
+
+@article{LY26,
+  abbr={USENIX Sec},
+  title={SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression},
+  author = {Keewoo Lee and Yongdong Yeo},
+  manuscript={false},
+  journal={USENIX Security Symposium},
+  year={2026},
+  eprint={2024/1814},
+  code={https://github.com/keewoolee/SophOMR},
+  abstract={Privacy-preserving blockchains and private messaging services that ensure receiver-privacy face a significant UX challenge: each client must scan every payload posted on the public bulletin board to avoid missing messages intended for them. Oblivious Message Retrieval (OMR) addresses this issue by securely outsourcing this expensive scanning process to a service provider using Homomorphic Encryption (HE). In this work, we propose a new OMR scheme that substantially improves upon the previous state-of-the-art, PerfOMR (USENIX Security'24). Our implementation demonstrates reductions of 3.3x in runtime, 2.2x in digest size, and 1.5x in key size, in a scenario with 65536 payloads (each 612 bytes), of which up to 50 are pertinent. At the core of these improvements is a new homomorphic compression mechanism, where ciphertexts of length proportional to the number of total payloads are compressed into a digest whose length is proportional to the upper bound on the number of pertinent payloads. Unlike previous approaches, our scheme fully exploits the native homomorphic SIMD structure of the underlying HE scheme, significantly enhancing efficiency. In the setting described above, our compression scheme achieves 7.4x speedup compared to PerfOMR.
+  }
+}
+
+@article{RLP26,
+  abbr={S&P},
+  title={*Verifiable PIR with Small Client Storage},
+  author = {Mayank Rathee and Keewoo Lee and Popa, Raluca Ada},
+  manuscript={false},
+  journal={IEEE Symposium on Security and Privacy},
+  year={2026},
+  eprint={2025/1714},
+  abstract={Efficient Verifiable Private Information Retrieval (vPIR) protocols, and more generally Verifiable Linearly Homomorphic Encryption (vLHE), suffer from high client storage. VeriSimplePIR (USENIX Security 2024), the state-of-the-art vPIR protocol, requires clients to persistently maintain over 1 GiB of local storage to privately access an 8 GiB remote database. We present a new vPIR protocol that reduces the client state by orders of magnitude while preserving online latency. In our protocol, clients only need to store 512 KiB for an 8 GiB database, achieving a 2000x improvement. Our vPIR protocol is built over our new vLHE scheme. Unlike VeriSimplePIR, our scheme doesn’t use random oracles and relies only on standard lattice assumptions - (R)LWE and SIS. These improvements come at a 2.5x cost in server throughput over VeriSimplePIR. Despite this throughput overhead, we achieve a comparable online latency to VeriSimplePIR by implementing several optimizations including query-level preprocessing. We also introduce the notion of covert vPIR (cvPIR), where stateful clients enjoy full vPIR security, while even stateless clients benefit from covert security against a malicious server.
+  }
+}
+
+@article{BLK25,
+  abbr={ACSSC},
+  title={*Leveraging FPGAs for Homomorphic Matrix-Vector Multiplication in Oblivious Message Retrieval},
+  author = {Grant Bosworth and Keewoo Lee and Sunwoong Kim},
+  manuscript={false},
+  journal={Asilomar Conference on Signals, Systems, and Computers},
+  year={2025},
+  arxiv={2512.11690},
+  abstract={While end-to-end encryption protects the content of messages, it does not secure metadata, which exposes sender and receiver information through traffic analysis. A plausible approach to protecting this metadata is to have senders post encrypted messages on a public bulletin board and receivers scan it for relevant messages. Oblivious message retrieval (OMR) leverages homomorphic encryption (HE) to improve user experience in this solution by delegating the scan to a resource-rich server while preserving privacy. A key process in OMR is the homomorphic detection of pertinent messages for the receiver from the bulletin board. It relies on a specialized matrix-vector multiplication algorithm, which involves extensive multiplications between ciphertext vectors and plaintext matrices, as well as homomorphic rotations. The computationally intensive nature of this process limits the practicality of OMR. To address this challenge, this paper proposes a hardware architecture to accelerate the matrix-vector multiplication algorithm. The building homomorphic operators in this algorithm are implemented using high-level synthesis, with design parameters for different parallelism levels. These operators are then deployed on a field-programmable gate array platform using an efficient design space exploration strategy to accelerate homomorphic matrix-vector multiplication. Compared to a software implementation, the proposed hardware accelerator achieves a 13.86x speedup.
+  }
+}
+
 @article{Lee24,
   abbr={IACR CiC},
   title={Bit Security as Cost to Demonstrate Advantage},
@@ -41,11 +79,11 @@
   url = {https://doi.org/10.62056/an5txol7}
 }
 
-@inproceedings{dCL24,
+@article{dCL24,
     abbr={USENIX Sec},
     author       = {{de Castro}, Leo and Lee, Keewoo},
     title        = {VeriSimplePIR: Verifiability in SimplePIR at No Online Cost for Honest Servers},
-    booktitle={USENIX Security Symposium},
+    journal={USENIX Security Symposium},
     year         = {2024},
     manuscript={false},
     eprint={2024/341},

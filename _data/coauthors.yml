@@ -14,6 +14,14 @@
   - firstname: ["Leo"]
     url: https://scholar.google.com/citations?user=9ZuahUAAAAAJ
 
+"Fairoze":
+  - firstname: ["Jaiden"]
+    url: https://www.jaiden.info/
+
+"Garg":
+  - firstname: ["Sanjam"]
+    url: https://people.eecs.berkeley.edu/~sanjamg/
+
 "Hafiz":
   - firstname: ["Syed Mahbub"]
     url: https://smhafiz.github.io/
@@ -82,6 +90,14 @@
   - firstname: ["Jai Hyun"]
     url: https://jaihyunp.github.io/
 
+"Popa":
+  - firstname: ["Raluca Ada"]
+    url: https://people.eecs.berkeley.edu/~raluca/
+
+"Rathee":
+  - firstname: ["Mayank"]
+    url: https://mayank0403.github.io/
+
 "Rutenbar":
   - firstname: ["Rob A"]
     url: https://www.rutenbar.pitt.edu/
@@ -97,6 +113,10 @@
 "Tol":
   - firstname: ["M Caner"]
     url: https://canertol.com/
+
+"Wang": 
+  - firstname: ["Mingyuan"]
+    url: https://sites.google.com/view/mingyuan-wang
 
 "Yeo":
   - firstname: ["Yongdong"]

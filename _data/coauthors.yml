@@ -10,6 +10,10 @@
   - firstname: ["Wonhee"]
     url: https://scholar.google.com/citations?user=Xlc-kD0AAAAJ
 
+"Choudhuri":
+  - firstname: ["Arka Rai"]
+    url: https://arka19.github.io/
+
 "de Castro":
   - firstname: ["Leo"]
     url: https://scholar.google.com/citations?user=9ZuahUAAAAAJ
@@ -21,6 +25,10 @@
 "Garg":
   - firstname: ["Sanjam"]
     url: https://people.eecs.berkeley.edu/~sanjamg/
+
+"Gregoire":
+  - firstname: ["Matthew"]
+    url: https://matthewgregoire42.github.io/
 
 "Hafiz":
   - firstname: ["Syed Mahbub"]
@@ -79,6 +87,10 @@
   - firstname: ["Seonhong"]
     url: https://snu-lukemin.github.io/
 
+"Montgomery":
+  - firstname: ["Hart"]
+    url: https://scholar.google.com/citations?user=ePPyg5MAAAAJ
+
 "Nam":
   - firstname: ["Yujin"]
     url: https://ujinnam.github.io/
@@ -93,6 +105,10 @@
 "Popa":
   - firstname: ["Raluca Ada"]
     url: https://people.eecs.berkeley.edu/~raluca/
+
+"Policharla":
+  - firstname: ["Guru Vamsi"]
+    url: https://guruvamsi-policharla.github.io/
 
 "Rathee":
   - firstname: ["Mayank"]

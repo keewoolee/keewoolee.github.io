@@ -1,6 +1,16 @@
 ---
 ---
 
+@article{CGGLLMPZ26,
+  title={Qurrency: a quantum-secure, private, and auditable platform for digital assets},
+  author = {Arka Rai Choudhuri and Sanjam Garg and Matthew Gregoire and Keewoo Lee and Mike Lodder and Hart Montgomery and Guru Vamsi Policharla and Jim Zhang},
+  manuscript={true},
+  year={2026},
+  eprint={2026/015},
+  abstract={Central bank digital currencies (CBDCs) and other related digital asset platforms have the potential to revolutionize the financial world.  While these platforms have been deployed in test environments by virtually all large financial institutions, including central banks, there are still several limitations of these systems that prevent widespread adoption.  These include (i) privacy, (ii) security against quantum adversaries, and (iii) auditability. In this work, we undertake (to our knowledge) the first formal study of these systems. While there have been many digital asset platforms implemented, we do not know of any formal model for a fundamentally UTXO-based digital asset platform/CBDC. Our first contribution is a formal modeling of a UTXO-based private digital asset system that meets our requirements listed above.  This model is loosely based upon the open source software that we found came the closest to meeting our requirements, Hyperledger Zeto.  In the course of our formal modeling, we found a critical security bug in Zeto which we responsibly disclosed to the Zeto maintainers and has since been fixed. We then provide an efficient construction of such a system, which we call Qurrency.  Qurrency is an efficient UTXO-based privacy-preserving token system that includes an auditing mechanism and is secure against "harvest now, decrypt later" attacks, which is critically important for several central banks, including the Bank of Brazil. We implemented our construction to show that it is practically efficient and can be used on any EVM-based blockchain system with ease.
+  }
+}
+
 @article{FGLW25,
   title={Bypassing Prompt Guards in Production with Controlled-Release Prompting},
   author = {Jaiden Fairoze and Sanjam Garg and Keewoo Lee and Mingyuan Wang},
@@ -10,6 +20,17 @@
   abstract={As large language models (LLMs) advance, ensuring AI safety and alignment is paramount. One popular approach is prompt guards, lightweight mechanisms designed to filter malicious queries while being easy to implement and update. In this work, we introduce a new attack that circumvents such prompt guards, highlighting their limitations. Our method consistently jailbreaks production models while maintaining response quality, even under the highly protected chat interfaces of Google Gemini (2.5 Flash/Pro), DeepSeek Chat (DeepThink), Grok (3), and Mistral Le Chat (Magistral). The attack exploits a resource asymmetry between the prompt guard and the main LLM, encoding a jailbreak prompt that lightweight guards cannot decode but the main model can. This reveals an attack surface inherent to lightweight prompt guards in modern LLM architectures and underscores the need to shift defenses from blocking malicious inputs to preventing malicious outputs. We additionally identify other critical alignment issues, such as copyrighted data extraction, training data extraction, and malicious response leakage during thinking.
   }
 }
+
+@article{Lee25,
+  title={Barely Doubly-Efficient SimplePIR},
+  author = {Keewoo Lee},
+  manuscript={true},
+  year={2025},
+  eprint={2025/1305},
+  abstract={A Private Information Retrieval (PIR) scheme allows a client to retrieve data from a database hosted on a remote server without revealing which location is being accessed. In Doubly-Efficient PIR (DEPIR), the server preprocesses the database offline into a data structure that enables it to answer any client query in sublinear time with respect to the database size $N$. The breakthrough work of Lin-Mook-Wichs (STOC’23) presented the first DEPIR construction from the Ring-LWE assumption. This remains essentially the only known construction to date, and realizing DEPIR from alternative foundations, particularly from plain LWE, has remained elusive.In this work, we present a simple LWE-based construction of DEPIR in the CRS model. Our construction is inspired by SimplePIR (USENIX’23) and leverages the matrix–vector multiplication preprocessing of Williams (SODA’07). While our construction is only barely doubly-efficient, with server computation of $O(N/\log{N})$, it was previously unknown whether even such modest sublinear efficiency could be achieved from unstructured, plain LWE.
+  }
+}
+
 
 @article{dCKKLMS24,
   title={More Efficient Lattice-based {OLE} from Circuit-private Linear {HE} with Polynomial Overhead},

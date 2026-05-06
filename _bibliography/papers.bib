@@ -1,6 +1,16 @@
 ---
 ---
 
+@article{CGLMPS26,
+  title={A Cryptographic Framework for Proof of Personhood},
+  author = {Arka Rai Choudhuri and Sanjam Garg and Keewoo Lee and Mike Lodder and Guru Vamsi Policharla and Rohit Sinha},
+  manuscript={true},
+  year={2026},
+  eprint={2026/333},
+  abstract={We initiate study on how to build a rigorous, cryptographic foundation for proofs of personhood -- convincing, privacy-preserving evidence that a digital participant is a real, unique, and reputable human, optionally with authenticated attributes such as age or institutional affiliation.  Towards this goal, we introduce a framework based on two types of credentials: personhood credentials (PHCs), issued by trusted authorities to attest to uniqueness and basic attributes, and verifiable relationship credentials (VRCs), issued peer-to-peer to capture reputation and real-world interactions. We formalize ideal functionalities that capture desirable security and privacy notions for proofs of personhood, including Sybil-resistance, authenticated personhood, and unlinkability across contexts. Finally, we then give efficient cryptographic constructions that realize these functionalities by combining PHCs, VRCs, and zero-knowledge proofs.  Our results suggest that a scalable, Sybil-resistant, and decentralized proof-of-personhood layer can serve as a reusable trust substrate for a wide range of online economic, social, and civic applications.
+  }
+}
+
 @article{CGGLLMPZ26,
   title={Qurrency: a quantum-secure, private, and auditable platform for digital assets},
   author = {Arka Rai Choudhuri and Sanjam Garg and Matthew Gregoire and Keewoo Lee and Mike Lodder and Hart Montgomery and Guru Vamsi Policharla and Jim Zhang},
@@ -21,35 +31,40 @@
   }
 }
 
-@article{Lee25,
-  title={Barely Doubly-Efficient SimplePIR},
-  author = {Keewoo Lee},
-  manuscript={true},
-  year={2025},
-  eprint={2025/1305},
-  abstract={A Private Information Retrieval (PIR) scheme allows a client to retrieve data from a database hosted on a remote server without revealing which location is being accessed. In Doubly-Efficient PIR (DEPIR), the server preprocesses the database offline into a data structure that enables it to answer any client query in sublinear time with respect to the database size $N$. The breakthrough work of Lin-Mook-Wichs (STOC’23) presented the first DEPIR construction from the Ring-LWE assumption. This remains essentially the only known construction to date, and realizing DEPIR from alternative foundations, particularly from plain LWE, has remained elusive.In this work, we present a simple LWE-based construction of DEPIR in the CRS model. Our construction is inspired by SimplePIR (USENIX’23) and leverages the matrix–vector multiplication preprocessing of Williams (SODA’07). While our construction is only barely doubly-efficient, with server computation of $O(N/\log{N})$, it was previously unknown whether even such modest sublinear efficiency could be achieved from unstructured, plain LWE.
-  }
-}
-
-
-@article{dCKKLMS24,
-  title={More Efficient Lattice-based {OLE} from Circuit-private Linear {HE} with Polynomial Overhead},
-  author = {{de Castro}, Leo and Duhyeong Kim and Miran Kim and Keewoo Lee and Seonhong Min and Yongsoo Song},
-  manuscript={true},
-  year={2024},
-  eprint={2024/1534},
-  abstract={We present a new and efficient method to obtain circuit privacy for lattice-based linearly homomorphic encryptions (LHE). In particular, our method does not involve noise-flooding with exponetially large errors or iterative bootstrapping. As a direct result, we obtain a semi-honest oblivious linear evaluation (OLE) protocol with the same efficiency, reducing the communication cost of the prior state of the art by 50%. Consequently, the amortized time of our protocol improves the prior work by 33% under 100Mbps network setting. Our semi-honest OLE is the first to achieve both concrete efficiency and asymptotic quasi-optimality. Together with an extension of the recent zero-knowledge proof of plaintext knowledge, our LHE yields actively-secure OLE with 2.7x reduced communication from the prior work. When applied to Overdrive (Eurocrypt '18), an MPC preprocessing protocol, our method provides 1.4x improvement in communication over the state of the art.}
-}
-
 @article{CLPY24,
   title={SIMD-Aware Homomorphic Compression and Application to Private Database Query},
   author = {{Jung Hee} Cheon and Keewoo Lee and {Jai Hyun} Park and Yongdong Yeo},
   manuscript={true},
   year={2024},
   arxiv={2408.17063},
+  code={https://github.com/keewoolee/PDQ},
   abstract={In a private database query scheme (PDQ), a server maintains a database, and users send queries to retrieve records of interest from the server while keeping their queries private. A crucial step in PDQ protocols based on homomorphic encryption is homomorphic compression, which compresses encrypted sparse vectors consisting of query results. In this work, we propose a new homomorphic compression scheme with PDQ as its main application. Unlike existing approaches, our scheme (i) can be efficiently implemented by fully exploiting homomorphic SIMD technique and (ii) enjoys both asymptotically optimal compression rate and asymptotically good decompression complexity. Experimental results show that our approach is 4.7x to 33.2x faster than the previous best results.}
 }
 
+@article{Lee26,
+  abbr={Crypto},
+  title={Barely Doubly-Efficient SimplePIR},
+  author = {Keewoo Lee},
+  Journal={Annual International Cryptology Conference (Crypto)},
+  manuscript={false},
+  year={2026},
+  eprint={2025/1305},
+  abstract={A Private Information Retrieval (PIR) scheme allows a client to retrieve data from a database hosted on a remote server without revealing which location is being accessed. In Doubly-Efficient PIR (DEPIR), the server preprocesses the database offline into a data structure that enables it to answer any client query in sublinear time with respect to the database size $N$. The breakthrough work of Lin-Mook-Wichs (STOC’23) presented the first DEPIR construction from the Ring-LWE assumption. This remains essentially the only known construction to date, and realizing DEPIR from alternative foundations, particularly from plain LWE, has remained elusive.In this work, we present a simple LWE-based construction of DEPIR in the CRS model. Our construction is inspired by SimplePIR (USENIX’23) and leverages the matrix–vector multiplication preprocessing of Williams (SODA’07). While our construction is only barely doubly-efficient, with server computation of $O(N/\log{N})$, it was previously unknown whether even such modest sublinear efficiency could be achieved from unstructured, plain LWE.
+  }
+}
+
+
+@article{dCKKLMS26,
+  abbr={IACR CiC},
+  title={More Efficient Lattice-based {OLE} from Circuit-private Linear {HE} with Polynomial Overhead},
+  author = {{de Castro}, Leo and Duhyeong Kim and Miran Kim and Keewoo Lee and Seonhong Min and Yongsoo Song},
+  manuscript={false},
+  year={2026},
+  eprint={2024/1534},
+  journal={IACR Communications in Cryptology},
+  abstract={We present a new and efficient method to obtain circuit privacy for lattice-based linearly homomorphic encryptions (LHE). In particular, our method does not involve noise-flooding with exponetially large errors or iterative bootstrapping. As a direct result, we obtain a semi-honest oblivious linear evaluation (OLE) protocol with the same efficiency, reducing the communication cost of the prior state of the art by 50%. Consequently, the amortized time of our protocol improves the prior work by 33% under 100Mbps network setting. Our semi-honest OLE is the first to achieve both concrete efficiency and asymptotic quasi-optimality. Together with an extension of the recent zero-knowledge proof of plaintext knowledge, our LHE yields actively-secure OLE with 2.7x reduced communication from the prior work. When applied to Overdrive (Eurocrypt '18), an MPC preprocessing protocol, our method provides 1.4x improvement in communication over the state of the art.},
+  url = {https://doi.org/10.62056/avivr-zn4}
+}
 
 @article{LY26,
   abbr={USENIX Sec},

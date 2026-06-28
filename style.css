@@ -1,0 +1,346 @@
+:root {
+  --fg: #333;
+  --muted: #777;
+  --link: #337ab7;
+  --rule: #e5e5e5;
+  --maxw: 48rem;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--fg);
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.layout {
+  display: flex;
+  gap: 2.5rem;
+  max-width: calc(var(--maxw) + 12rem);
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.side-nav {
+  position: sticky;
+  top: 8.8rem;
+  align-self: flex-start;
+  margin-top: 4.8rem;
+  flex: 0 0 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.side-nav a {
+  color: var(--link);
+  text-transform: lowercase;
+}
+.side-nav a::before {
+  content: "#";
+}
+
+main {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: var(--maxw);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* Header */
+header { margin-bottom: 1.75rem; }
+
+.avatar {
+  float: right;
+  width: 170px;
+  margin: 0.75rem 0 0.4rem 2rem; /* drop the photo so its top sits mid-first-line */
+}
+
+.photoview { position: absolute; opacity: 0; pointer-events: none; }
+
+.avatar-frame {
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#p-2000:checked ~ .avatar-frame .photo-2000,
+#p-2020:checked ~ .avatar-frame .photo-2020,
+#p-2026a:checked ~ .avatar-frame .photo-2026a,
+#p-2026b:checked ~ .avatar-frame .photo-2026b { opacity: 1; }
+
+.photo-tabs {
+  /* Size to the row's natural width and center it on the photo, even when the
+     row is wider than the photo (text-align:center would left-flush the overflow). */
+  width: max-content;
+  margin-top: 0.45rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.75rem;
+  color: var(--muted); /* the literal · separators between year labels */
+}
+
+.photo-tabs label { cursor: pointer; color: var(--link); }
+.photo-tabs label:hover { text-decoration: underline; }
+
+#p-2000:checked ~ .photo-tabs label[for="p-2000"],
+#p-2020:checked ~ .photo-tabs label[for="p-2020"],
+#p-2026a:checked ~ .photo-tabs label[for="p-2026a"],
+#p-2026b:checked ~ .photo-tabs label[for="p-2026b"] {
+  font-weight: 600;
+}
+
+.name-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.3rem 1.25rem;
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+}
+
+.email {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+  scroll-margin-top: 3.5rem;
+}
+
+/* About is the first section — jumping to it lands at the very top (header visible) */
+#about { scroll-margin-top: 12rem; }
+
+section p { text-align: justify; }
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 2rem 0 0.75rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+/* Selected / All toggle (CSS-only, no JS) */
+.pubview { position: absolute; opacity: 0; pointer-events: none; }
+
+.pub-header {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  gap: 1.25rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.pub-header h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.pub-tabs {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.pub-tabs label {
+  cursor: pointer;
+  color: var(--link);
+  white-space: nowrap; /* keep "2017-2024" etc. whole — no break at the hyphen */
+}
+.pub-tabs label:hover { text-decoration: underline; }
+
+#view-selected:checked ~ .pub-header label[for="view-selected"],
+#view-all:checked ~ .pub-header label[for="view-all"],
+#view-early:checked ~ .pub-header label[for="view-early"],
+#view-recent:checked ~ .pub-header label[for="view-recent"] {
+  font-weight: 600;
+}
+
+#view-selected:checked ~ .pubs li:not(.selected) { display: none; }
+
+/* Custom order within the Selected view only (other views keep document order) */
+#view-selected:checked ~ .pubs li.so1 { order: 1; }
+#view-selected:checked ~ .pubs li.so2 { order: 2; }
+#view-selected:checked ~ .pubs li.so3 { order: 3; }
+#view-selected:checked ~ .pubs li.so4 { order: 4; }
+#view-selected:checked ~ .pubs li.so5 { order: 5; }
+#view-selected:checked ~ .pubs li.so6 { order: 6; }
+#view-selected:checked ~ .pubs li.so7 { order: 7; }
+#view-selected:checked ~ .pubs li.so8 { order: 8; }
+#view-selected:checked ~ .pubs li.so9 { order: 9; }
+#view-early:checked ~ .pubs li:not(.early) { display: none; }
+#view-recent:checked ~ .pubs li:not(.recent) { display: none; }
+
+/* Publications */
+.pubs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pubs .title {
+  display: block;
+  font-weight: 600;
+}
+
+.pubs .authors {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.pubs .authors a,
+.coauthor {
+  color: inherit;
+  text-decoration: none;
+}
+.pubs .authors a:hover,
+.coauthor:hover { text-decoration: underline; }
+/* Keep each linked author name whole — no break at its spaces or hyphens. */
+.pubs .authors a { white-space: nowrap; }
+
+.pubs .meta {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.pubs .meta a { color: var(--link); }
+
+/* Generic entry list (Honors, Service, …) */
+.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.entries li { margin-bottom: 1rem; }
+.entries .e-name { display: block; }
+.entries .e-detail {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* As soon as the viewport is too narrow to show the full-width layout alongside
+   the sidebar, drop the sidebar to a centered top row and cap the single column
+   at the content width (so text lines don't stretch). */
+@media (max-width: 60rem) {
+  .layout {
+    flex-direction: column;
+    gap: 1.75rem;
+    padding-top: 2rem;
+    /* Match the single column to the desktop main width so wrapping is identical.
+       Desktop main = (--maxw + 12rem layout) - 3rem padding - 9rem nav - 2.5rem gap
+       = --maxw - 2.5rem of content; + 3rem padding back = --maxw + 0.5rem here. */
+    max-width: calc(var(--maxw) + 0.5rem);
+  }
+  .side-nav {
+    position: static;
+    margin-top: 0;
+    flex: 0 0 auto;
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rule);
+    /* Shrink the font on narrow screens so the row stays on one line;
+       caps at 0.85rem once there's room, wraps only below the floor. */
+    font-size: clamp(0.58rem, 3.0vw, 0.85rem);
+  }
+  .side-nav a:not(:last-child)::after {
+    content: "·";
+    display: inline-block;
+    margin: 0 0.3em;
+    color: var(--muted);
+    text-decoration: none;
+  }
+}
+
+/* Only once even the full width can't hold the header on one line does it
+   stack into two left-aligned rows: title + email on top, links below. */
+@media (max-width: 46rem) {
+  .name-row { justify-content: flex-start; }
+  .profile-links { flex-basis: 100%; text-align: left; }
+  /* Once the header stacks, move the photo above the bio, centered, instead of
+     floating it beside the now-narrow text column. */
+  .avatar { float: none; margin: 0 auto 1.25rem; }
+  /* Keep the tabs on the heading's line; shrink their font to fit beside
+     "Publications" instead of dropping below it. The em-based gap scales with
+     the font, so the clamp tracks the available width cleanly. */
+  .pub-header { gap: 1.25rem; }
+  .pub-tabs { gap: 1.2em; font-size: clamp(0.45rem, calc((100vw - 185px) * 0.049), 0.9rem); }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .layout { padding: 1.5rem 1.2rem 4rem; }
+  .avatar { width: 140px; }
+  .avatar-frame { width: 140px; height: 140px; }
+  /* Shrink the year row so it fits within the 140px photo (no overflow). */
+  .photo-tabs { font-size: 0.6rem; }
+}

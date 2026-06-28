@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keewoo Lee</title>
+  <meta name="description" content="Keewoo Lee — cryptography researcher at the Ethereum Foundation.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true }
+        ]
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="layout">
+  <aside class="side-nav">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#writings">Writings</a>
+    <a href="#honors">Honors</a>
+    <a href="#service">Service</a>
+  </aside>
+  <main>
+
+  <header>
+    <div class="name-row">
+      <h1>Keewoo Lee</h1>
+      <span class="email">keewoole@gmail.com</span>
+      <span class="profile-links"><a href="assets/pdf/CV_KeewooLee.pdf" target="_blank" rel="noopener noreferrer">CV</a> · <a href="https://scholar.google.com/citations?user=rzBcBq0AAAAJ" target="_blank" rel="noopener noreferrer">Google&nbsp;Scholar</a> · <a href="https://dblp.org/pid/208/8581" target="_blank" rel="noopener noreferrer">DBLP</a> · <a href="https://github.com/keewoolee" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/keewoolee" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="avatar">
+      <input type="radio" name="photo" id="p-2000" class="photoview" checked>
+      <input type="radio" name="photo" id="p-2020" class="photoview">
+      <input type="radio" name="photo" id="p-2026a" class="photoview">
+      <input type="radio" name="photo" id="p-2026b" class="photoview">
+      <div class="avatar-frame">
+        <img class="photo photo-2000" src="assets/img/profile_2000.02.jpg" alt="Keewoo Lee, 2000">
+        <img class="photo photo-2020" src="assets/img/profile_2020.02.jpg" alt="Keewoo Lee, 2020">
+        <img class="photo photo-2026a" src="assets/img/profile_2026.04.14.jpg" alt="Keewoo Lee, 2026">
+        <img class="photo photo-2026b" src="assets/img/profile_2026.04.16.jpg" alt="Keewoo Lee, 2026">
+      </div>
+      <div class="photo-tabs">
+        <label for="p-2000">2000</label> ·
+        <label for="p-2020">2020</label> ·
+        <label for="p-2026a">2026a</label> ·
+        <label for="p-2026b">2026b</label>
+      </div>
+    </div>
+    <p>I am a cryptography researcher at
+      <a href="https://ethereum.foundation/" target="_blank" rel="noopener noreferrer">Ethereum Foundation</a>.
+      Previously, I was a postdoctoral researcher at UC Berkeley, hosted by
+      <a href="https://people.eecs.berkeley.edu/~sanjamg/" target="_blank" rel="noopener noreferrer">Sanjam Garg</a>.
+      I obtained my Ph.D. in Mathematical Sciences at Seoul National University,
+      advised by
+      <a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung Hee Cheon</a>.</p>
+
+    <p>I am broadly interested in cryptography from theory to practice. Currently, my
+      research focus is on cryptographic primitives for secure computation (e.g.,
+      <a href="https://en.wikipedia.org/wiki/Homomorphic_encryption" target="_blank" rel="noopener noreferrer">homomorphic encryption</a>,
+      <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank" rel="noopener noreferrer">secure multiparty computation</a>)
+      and their applications (e.g., private database query).</p>
+  </section>
+
+  <section id="publications">
+    <input type="radio" name="pubview" id="view-selected" class="pubview" checked>
+    <input type="radio" name="pubview" id="view-all" class="pubview">
+    <input type="radio" name="pubview" id="view-early" class="pubview">
+    <input type="radio" name="pubview" id="view-recent" class="pubview">
+    <div class="pub-header">
+      <h2>Publications</h2>
+      <div class="pub-tabs">
+        <label for="view-selected">Selected</label>
+        <label for="view-all">All</label>
+        <label for="view-early">2017-2024</label>
+        <label for="view-recent">2025-Present</label>
+      </div>
+    </div>
+    <p class="note">Authors are listed in alphabetical order by last name, unless an asterisk&nbsp;(*) is
+      indicated. <a href="https://www.ams.org/profession/leaders/CultureStatement04.pdf" target="_blank" rel="noopener noreferrer">[AMS&nbsp;Statement]</a></p>
+
+    <!--
+      Each <li> carries filter classes that drive the CSS-only tabs (no JS):
+        selected  -> shown in the "Selected" tab
+        recent    -> shown in "2025-Present"
+        early      -> shown in "2017-2024"
+      The "All" and year tabs render in document order, so they need no per-item
+      classes. The "Selected" tab is the only one with a custom order: the soN
+      classes (so1..soN) set its order via CSS `order`. To reorder Selected,
+      renumber the soN classes; to add a paper to Selected, add `selected` plus
+      the next soN. Keep soN contiguous (1..N) within the Selected set.
+    -->
+    <ol class="pubs">
+      <li class="recent">
+        <span class="title">*Lean-GAP: A Dataset of Formalized Graduate Algebra Problems</span>
+        <span class="authors"><a href="https://seewoo5.github.io/" target="_blank" rel="noopener noreferrer">Seewoo&nbsp;Lee</a>, <a href="https://byunghakhwang.github.io/" target="_blank" rel="noopener noreferrer">Byung-Hak&nbsp;Hwang</a>, <a href="https://wavelets.yonsei.ac.kr/~hjlim/" target="_blank" rel="noopener noreferrer">Hyojae&nbsp;Lim</a>, Jihoon&nbsp;Hyun, <a href="https://sites.google.com/view/ilkyoochoi" target="_blank" rel="noopener noreferrer">Ilkyoo&nbsp;Choi</a>, <a href="https://yechanp.github.io/site/" target="_blank" rel="noopener noreferrer">Yeachan&nbsp;Park</a>, <a href="https://jcpaik.github.io/" target="_blank" rel="noopener noreferrer">Jineon&nbsp;Baek</a>, <a href="https://hyukpyohong.github.io/" target="_blank" rel="noopener noreferrer">Hyukpyo&nbsp;Hong</a>, Keewoo&nbsp;Lee, Jaeseong&nbsp;Heo, <a href="https://sites.google.com/site/hrbaik85/" target="_blank" rel="noopener noreferrer">Hyungryul&nbsp;Baik</a>, <a href="https://chlee.cftnt.net/index.php?title=Chul-hee_Lee" target="_blank" rel="noopener noreferrer">Chul-hee&nbsp;Lee</a>, <a href="https://khlee-math.github.io/" target="_blank" rel="noopener noreferrer">Kyu-Hwan&nbsp;Lee</a></span>
+        <span class="meta">Preprint&nbsp;· 2026&nbsp;· <a href="https://arxiv.org/abs/2606.02588" target="_blank" rel="noopener noreferrer">arxiv</a></span>
+      </li>
+      <li class="recent">
+        <span class="title">A Cryptographic Framework for Proof of Personhood</span>
+        <span class="authors"><a href="https://arka19.github.io/" target="_blank" rel="noopener noreferrer">Arka&nbsp;Rai&nbsp;Choudhuri</a>, <a href="https://people.eecs.berkeley.edu/~sanjamg/" target="_blank" rel="noopener noreferrer">Sanjam&nbsp;Garg</a>, Keewoo&nbsp;Lee, Mike&nbsp;Lodder, <a href="https://guruvamsi-policharla.github.io/" target="_blank" rel="noopener noreferrer">Guru&nbsp;Vamsi&nbsp;Policharla</a>, <a href="https://scholar.google.com/citations?user=MlPFWbgAAAAJ" target="_blank" rel="noopener noreferrer">Rohit&nbsp;Sinha</a></span>
+        <span class="meta">Preprint&nbsp;· 2026&nbsp;· <a href="https://eprint.iacr.org/2026/333" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="recent">
+        <span class="title">Qurrency: a quantum-secure, private, and auditable platform for digital assets</span>
+        <span class="authors"><a href="https://arka19.github.io/" target="_blank" rel="noopener noreferrer">Arka&nbsp;Rai&nbsp;Choudhuri</a>, <a href="https://people.eecs.berkeley.edu/~sanjamg/" target="_blank" rel="noopener noreferrer">Sanjam&nbsp;Garg</a>, <a href="https://matthewgregoire42.github.io/" target="_blank" rel="noopener noreferrer">Matthew&nbsp;Gregoire</a>, Keewoo&nbsp;Lee, Mike&nbsp;Lodder, <a href="https://scholar.google.com/citations?user=ePPyg5MAAAAJ" target="_blank" rel="noopener noreferrer">Hart&nbsp;Montgomery</a>, <a href="https://guruvamsi-policharla.github.io/" target="_blank" rel="noopener noreferrer">Guru&nbsp;Vamsi&nbsp;Policharla</a>, Jim&nbsp;Zhang</span>
+        <span class="meta">Preprint&nbsp;· 2026&nbsp;· <a href="https://eprint.iacr.org/2026/015" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="selected recent so1">
+        <span class="title">Barely Doubly-Efficient SimplePIR</span>
+        <span class="authors">Keewoo&nbsp;Lee</span>
+        <span class="meta">Crypto 2026&nbsp;· <a href="https://eprint.iacr.org/2025/1305" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="selected recent so2">
+        <span class="title">Bypassing Prompt Guards in Production with Controlled-Release Prompting</span>
+        <span class="authors"><a href="https://www.jaiden.info/" target="_blank" rel="noopener noreferrer">Jaiden&nbsp;Fairoze</a>, <a href="https://people.eecs.berkeley.edu/~sanjamg/" target="_blank" rel="noopener noreferrer">Sanjam&nbsp;Garg</a>, Keewoo&nbsp;Lee, <a href="https://sites.google.com/view/mingyuan-wang" target="_blank" rel="noopener noreferrer">Mingyuan&nbsp;Wang</a></span>
+        <span class="meta">USENIX Security 2026&nbsp;· <a href="https://www.usenix.org/conference/usenixsecurity26/presentation/fairoze" target="_blank" rel="noopener noreferrer">link</a>&nbsp;· <a href="https://arxiv.org/abs/2510.01529" target="_blank" rel="noopener noreferrer">arxiv</a>&nbsp;· <a href="https://www.quantamagazine.org/cryptographers-show-that-ai-protections-will-always-have-holes-20251210/" target="_blank" rel="noopener noreferrer">media&nbsp;(English)</a>&nbsp;· <a href="https://www.dongascience.com/ko/news/75588" target="_blank" rel="noopener noreferrer">media&nbsp;(Korean)</a></span>
+      </li>
+      <li class="selected recent so3">
+        <span class="title">SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression</span>
+        <span class="authors">Keewoo&nbsp;Lee, <a href="https://yongdongyeo.github.io/" target="_blank" rel="noopener noreferrer">Yongdong&nbsp;Yeo</a></span>
+        <span class="meta">USENIX Security 2026&nbsp;· <a href="https://www.usenix.org/conference/usenixsecurity26/presentation/lee-keewoo" target="_blank" rel="noopener noreferrer">link</a>&nbsp;· <a href="https://eprint.iacr.org/2024/1814" target="_blank" rel="noopener noreferrer">eprint</a>&nbsp;· <a href="https://github.com/keewoolee/SophOMR" target="_blank" rel="noopener noreferrer">code</a></span>
+      </li>
+      <li class="selected recent so4">
+        <span class="title">*Verifiable PIR with Small Client Storage</span>
+        <span class="authors"><a href="https://mayank0403.github.io/" target="_blank" rel="noopener noreferrer">Mayank&nbsp;Rathee</a>, Keewoo&nbsp;Lee, <a href="https://people.eecs.berkeley.edu/~raluca/" target="_blank" rel="noopener noreferrer">Raluca&nbsp;Ada&nbsp;Popa</a></span>
+        <span class="meta">IEEE S&amp;P 2026&nbsp;· <a href="https://doi.ieeecomputersociety.org/10.1109/SP63933.2026.00024" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://eprint.iacr.org/2025/1714" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="recent">
+        <span class="title">More Efficient Lattice-based OLE from Circuit-private Linear HE with Polynomial Overhead</span>
+        <span class="authors"><a href="https://scholar.google.com/citations?user=ASX9tpkAAAAJ" target="_blank" rel="noopener noreferrer">Leo&nbsp;de&nbsp;Castro</a>, <a href="https://du1204.github.io/" target="_blank" rel="noopener noreferrer">Duhyeong&nbsp;Kim</a>, <a href="https://k-miran.github.io/" target="_blank" rel="noopener noreferrer">Miran&nbsp;Kim</a>, Keewoo&nbsp;Lee, <a href="https://minsh.info/" target="_blank" rel="noopener noreferrer">Seonhong&nbsp;Min</a>, <a href="https://yongsoosong.github.io/" target="_blank" rel="noopener noreferrer">Yongsoo&nbsp;Song</a></span>
+        <span class="meta">IACR CiC&nbsp;· 2026&nbsp;· <a href="https://doi.org/10.62056/avivr-zn4" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://eprint.iacr.org/2024/1534" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="recent">
+        <span class="title">*Leveraging FPGAs for Homomorphic Matrix-Vector Multiplication in Oblivious Message Retrieval</span>
+        <span class="authors">Grant&nbsp;Bosworth, Keewoo&nbsp;Lee, <a href="https://sites.google.com/view/sunwoong/" target="_blank" rel="noopener noreferrer">Sunwoong&nbsp;Kim</a></span>
+        <span class="meta">ACSSC 2025&nbsp;· <a href="https://doi.org/10.1109/IEEECONF67917.2025.11443691" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://arxiv.org/abs/2512.11690" target="_blank" rel="noopener noreferrer">arxiv</a></span>
+      </li>
+      <li class="selected early so6">
+        <span class="title">Bit Security as Cost to Demonstrate Advantage</span>
+        <span class="authors">Keewoo&nbsp;Lee</span>
+        <span class="meta">IACR CiC&nbsp;· 2024&nbsp;· <a href="https://doi.org/10.62056/an5txol7" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://eprint.iacr.org/2022/655" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="selected early so5">
+        <span class="title">VeriSimplePIR: Verifiability in SimplePIR at No Online Cost for Honest Servers</span>
+        <span class="authors"><a href="https://scholar.google.com/citations?user=ASX9tpkAAAAJ" target="_blank" rel="noopener noreferrer">Leo&nbsp;de&nbsp;Castro</a>, Keewoo&nbsp;Lee</span>
+        <span class="meta">USENIX Security 2024&nbsp;· <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/de-castro" target="_blank" rel="noopener noreferrer">link</a>&nbsp;· <a href="https://eprint.iacr.org/2024/341" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="selected early so7">
+        <span class="title">SIMD-Aware Homomorphic Compression and Application to Private Database Query</span>
+        <span class="authors"><a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, Keewoo&nbsp;Lee, <a href="https://jaihyunp.github.io/" target="_blank" rel="noopener noreferrer">Jai&nbsp;Hyun&nbsp;Park</a>, <a href="https://yongdongyeo.github.io/" target="_blank" rel="noopener noreferrer">Yongdong&nbsp;Yeo</a></span>
+        <span class="meta">Preprint&nbsp;· 2024&nbsp;· <a href="https://arxiv.org/abs/2408.17063" target="_blank" rel="noopener noreferrer">arxiv</a>&nbsp;· <a href="https://github.com/keewoolee/PDQ" target="_blank" rel="noopener noreferrer">code</a></span>
+      </li>
+      <li class="early">
+        <span class="title">*Asynchronous Federated Learning with Directed Acyclic Graph-based Blockchain in Edge Computing: Overview, Design, and Challenges</span>
+        <span class="authors"><a href="https://koseoyoung.github.io/" target="_blank" rel="noopener noreferrer">Seoyoung&nbsp;Ko</a>, Keewoo&nbsp;Lee, <a href="https://github.com/ChrisCho-H" target="_blank" rel="noopener noreferrer">Hyunhum&nbsp;Cho</a>, Yoonjae&nbsp;Hwang, <a href="https://sites.google.com/view/huisujang/" target="_blank" rel="noopener noreferrer">Huisu&nbsp;Jang</a></span>
+        <span class="meta">Expert Systems with Applications&nbsp;· 2023&nbsp;· <a href="https://doi.org/10.1016/j.eswa.2023.119896" target="_blank" rel="noopener noreferrer">doi</a></span>
+      </li>
+      <li class="selected early so8">
+        <span class="title">Limits of Polynomial Packings for $\mathbb{Z}_{p^k}$ and $\mathbb{F}_{p^k}$</span>
+        <span class="authors"><a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, Keewoo&nbsp;Lee</span>
+        <span class="meta">Eurocrypt 2022&nbsp;· <a href="https://doi.org/10.1007/978-3-031-06944-4_18" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://eprint.iacr.org/2021/1033" target="_blank" rel="noopener noreferrer">eprint</a>&nbsp;· <a href="assets/pdf/CL22_slides.pdf" target="_blank" rel="noopener noreferrer">slides</a>&nbsp;· <a href="https://youtu.be/5sQyNshWu3g" target="_blank" rel="noopener noreferrer">video</a></span>
+      </li>
+      <li class="early">
+        <span class="title">On the Scaled Inverse of $(x^i - x^j)$ modulo Cyclotomic Polynomial of the form $\Phi_{p^s}(x)$ or $\Phi_{p^s q^t}(x)$</span>
+        <span class="authors"><a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://dwkim606.github.io/" target="_blank" rel="noopener noreferrer">Dongwoo&nbsp;Kim</a>, <a href="https://du1204.github.io/" target="_blank" rel="noopener noreferrer">Duhyeong&nbsp;Kim</a>, Keewoo&nbsp;Lee</span>
+        <span class="meta">JKMS&nbsp;· 2022&nbsp;· <a href="https://doi.org/10.4134/JKMS.j210446" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://arxiv.org/abs/2106.01742" target="_blank" rel="noopener noreferrer">arxiv</a></span>
+      </li>
+      <li class="early">
+        <span class="title">*HELPSE: Homomorphic Encryption-based Lightweight Password Strength Estimation in a Virtual Keyboard System</span>
+        <span class="authors"><a href="https://michaelcho.info/" target="_blank" rel="noopener noreferrer">Michael&nbsp;Cho</a>, Keewoo&nbsp;Lee, <a href="https://sites.google.com/view/sunwoong/" target="_blank" rel="noopener noreferrer">Sunwoong&nbsp;Kim</a></span>
+        <span class="meta">GLSVLSI 2022&nbsp;· <a href="https://doi.org/10.1145/3526241.3530338" target="_blank" rel="noopener noreferrer">doi</a></span>
+      </li>
+      <li class="selected early so9">
+        <span class="title">MHz2k: MPC from HE over $\mathbb{Z}_{2^k}$ with New Packing, Simpler Reshare, and Better ZKP</span>
+        <span class="authors"><a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://dwkim606.github.io/" target="_blank" rel="noopener noreferrer">Dongwoo&nbsp;Kim</a>, Keewoo&nbsp;Lee</span>
+        <span class="meta">Crypto 2021&nbsp;· <a href="https://doi.org/10.1007/978-3-030-84245-1_15" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://eprint.iacr.org/2021/1383" target="_blank" rel="noopener noreferrer">eprint</a>&nbsp;· <a href="assets/pdf/CKL21_slides.pdf" target="_blank" rel="noopener noreferrer">slides</a>&nbsp;· <a href="https://youtu.be/Hi6pU7eT0k4" target="_blank" rel="noopener noreferrer">video</a></span>
+      </li>
+      <li class="early">
+        <span class="title">*Accelerating Fully Homomorphic Encryption Through Architecture-Centric Analysis and Optimization</span>
+        <span class="authors"><a href="https://dblp.org/pid/223/4403.html" target="_blank" rel="noopener noreferrer">Wonkyung&nbsp;Jung</a>, <a href="https://sites.google.com/view/ejlee-private" target="_blank" rel="noopener noreferrer">Eojin&nbsp;Lee</a>, <a href="https://scholar.google.com/citations?user=Y8j-o-sAAAAJ" target="_blank" rel="noopener noreferrer">Sangpyo&nbsp;Kim</a>, <a href="https://scholar.google.com/citations?user=Nu3Bn0YAAAAJ" target="_blank" rel="noopener noreferrer">Jongmin&nbsp;Kim</a>, Namhoon&nbsp;Kim, Keewoo&nbsp;Lee, <a href="http://math.ewha.ac.kr/~chohong/" target="_blank" rel="noopener noreferrer">Chohong&nbsp;Min</a>, <a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://geniajh.github.io/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Ho&nbsp;Ahn</a></span>
+        <span class="meta">IEEE Access&nbsp;· 2021&nbsp;· <a href="https://doi.org/10.1109/ACCESS.2021.3096189" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://arxiv.org/abs/2003.04510" target="_blank" rel="noopener noreferrer">arxiv</a></span>
+      </li>
+      <li class="early">
+        <span class="title">Gimme That Model!: A Trusted ML Model Trading Protocol</span>
+        <span class="authors"><a href="https://dblp.org/pid/259/9958.html" target="_blank" rel="noopener noreferrer">Laia&nbsp;Amorós</a>, <a href="https://smhafiz.github.io/" target="_blank" rel="noopener noreferrer">Syed&nbsp;Mahbub&nbsp;Hafiz</a>, Keewoo&nbsp;Lee, <a href="https://canertol.com/" target="_blank" rel="noopener noreferrer">M.&nbsp;Caner&nbsp;Tol</a></span>
+        <span class="meta">Protecting Privacy through Homomorphic Encryption (Book Chapter)&nbsp;· 2021&nbsp;· <a href="https://doi.org/10.1007/978-3-030-77287-1_11" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://arxiv.org/abs/2003.00610" target="_blank" rel="noopener noreferrer">arxiv</a>&nbsp;· <a href="https://youtu.be/E8PPHkTQzYc" target="_blank" rel="noopener noreferrer">video</a></span>
+      </li>
+      <li class="early">
+        <span class="title">*Hardware Architecture of a Number Theoretic Transform for a Bootstrappable RNS-based Homomorphic Encryption Scheme</span>
+        <span class="authors"><a href="https://sites.google.com/view/sunwoong/" target="_blank" rel="noopener noreferrer">Sunwoong&nbsp;Kim</a>, Keewoo&nbsp;Lee, <a href="https://wony0404.github.io/" target="_blank" rel="noopener noreferrer">Wonhee&nbsp;Cho</a>, <a href="https://ujinnam.github.io/" target="_blank" rel="noopener noreferrer">Yujin&nbsp;Nam</a>, <a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://www.rutenbar.pitt.edu/" target="_blank" rel="noopener noreferrer">Rob&nbsp;A.&nbsp;Rutenbar</a></span>
+        <span class="meta">FCCM 2020&nbsp;· <a href="https://doi.org/10.1109/FCCM48280.2020.00017" target="_blank" rel="noopener noreferrer">doi</a></span>
+      </li>
+      <li class="early">
+        <span class="title">Numerical Method for Comparison on Homomorphically Encrypted Numbers</span>
+        <span class="authors"><a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://dwkim606.github.io/" target="_blank" rel="noopener noreferrer">Dongwoo&nbsp;Kim</a>, <a href="https://du1204.github.io/" target="_blank" rel="noopener noreferrer">Duhyeong&nbsp;Kim</a>, <a href="http://www.math.snu.ac.kr/~hhlee/" target="_blank" rel="noopener noreferrer">Hun&nbsp;Hee&nbsp;Lee</a>, Keewoo&nbsp;Lee</span>
+        <span class="meta">Asiacrypt 2019&nbsp;· <a href="https://doi.org/10.1007/978-3-030-34621-8_15" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://eprint.iacr.org/2019/417" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="early">
+        <span class="title">*FPGA-based Accelerators of Fully Pipelined Modular Multipliers for Homomorphic Encryption</span>
+        <span class="authors"><a href="https://sites.google.com/view/sunwoong/" target="_blank" rel="noopener noreferrer">Sunwoong&nbsp;Kim</a>, Keewoo&nbsp;Lee, <a href="https://wony0404.github.io/" target="_blank" rel="noopener noreferrer">Wonhee&nbsp;Cho</a>, <a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://www.rutenbar.pitt.edu/" target="_blank" rel="noopener noreferrer">Rob&nbsp;A.&nbsp;Rutenbar</a></span>
+        <span class="meta">ReConFig 2019&nbsp;· <a href="https://doi.org/10.1109/ReConFig48160.2019.8994793" target="_blank" rel="noopener noreferrer">doi</a></span>
+      </li>
+      <li class="early">
+        <span class="title">Efficient Identity-Based Encryption from LWR</span>
+        <span class="authors"><a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, Haejin&nbsp;Cho, <a href="https://scholar.google.com/citations?user=X9_rHWgAAAAJ" target="_blank" rel="noopener noreferrer">Jaewook&nbsp;Jung</a>, <a href="https://sungshincrypto.github.io/" target="_blank" rel="noopener noreferrer">Joohee&nbsp;Lee</a>, Keewoo&nbsp;Lee</span>
+        <span class="meta">ICISC 2019&nbsp;· <a href="https://doi.org/10.1007/978-3-030-40921-0_14" target="_blank" rel="noopener noreferrer">doi</a></span>
+      </li>
+      <li class="early">
+        <span class="title">*A Secure SNP Panel Scheme using Homomorphically Encrypted K-mers without SNP Calling on the User Side</span>
+        <span class="authors"><a href="https://stj.bio/" target="_blank" rel="noopener noreferrer">Sungjoon&nbsp;Park</a>, <a href="https://scholar.google.com/citations?user=9LShzG8AAAAJ" target="_blank" rel="noopener noreferrer">Minsu&nbsp;Kim</a>, <a href="https://scholar.google.com/citations?user=i8qD1XoAAAAJ" target="_blank" rel="noopener noreferrer">Seokjun&nbsp;Seo</a>, <a href="https://swanhong.github.io/" target="_blank" rel="noopener noreferrer">Seungwan&nbsp;Hong</a>, <a href="https://kyoohyunghan.github.io/" target="_blank" rel="noopener noreferrer">Kyoohyung&nbsp;Han</a>, Keewoo&nbsp;Lee, <a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://bhi-kimlab.github.io/members/sun_kim.html" target="_blank" rel="noopener noreferrer">Sun&nbsp;Kim</a></span>
+        <span class="meta">BMC Genomics&nbsp;· 2019&nbsp;· <a href="https://doi.org/10.1186/s12864-019-5473-z" target="_blank" rel="noopener noreferrer">doi</a></span>
+      </li>
+      <li class="early">
+        <span class="title">*Logistic Regression Model Training based on the Approximate Homomorphic Encryption</span>
+        <span class="authors"><a href="https://scholar.google.com/citations?user=uY_xNHwAAAAJ" target="_blank" rel="noopener noreferrer">Andrey&nbsp;Kim</a>, <a href="https://yongsoosong.github.io/" target="_blank" rel="noopener noreferrer">Yongsoo&nbsp;Song</a>, <a href="https://k-miran.github.io/" target="_blank" rel="noopener noreferrer">Miran&nbsp;Kim</a>, Keewoo&nbsp;Lee, <a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a></span>
+        <span class="meta">BMC Medical Genomics&nbsp;· 2018&nbsp;· <a href="https://doi.org/10.1186/s12920-018-0401-7" target="_blank" rel="noopener noreferrer">doi</a>&nbsp;· <a href="https://eprint.iacr.org/2018/254" target="_blank" rel="noopener noreferrer">eprint</a></span>
+      </li>
+      <li class="early">
+        <span class="title">Privacy-Preserving Computations of Predictive Medical Models with Minimax Approximation and Non-Adjacent Form</span>
+        <span class="authors"><a href="http://www.math.snu.ac.kr/~jhcheon/xe2/" target="_blank" rel="noopener noreferrer">Jung&nbsp;Hee&nbsp;Cheon</a>, <a href="https://dblp.org/pid/177/2246.html" target="_blank" rel="noopener noreferrer">Jinhyuck&nbsp;Jeong</a>, <a href="https://sungshincrypto.github.io/" target="_blank" rel="noopener noreferrer">Joohee&nbsp;Lee</a>, Keewoo&nbsp;Lee</span>
+        <span class="meta">WAHC 2017&nbsp;· <a href="https://doi.org/10.1007/978-3-319-70278-0_4" target="_blank" rel="noopener noreferrer">doi</a></span>
+      </li>
+    </ol>
+  </section>
+
+  <section id="writings">
+    <h2>Writings</h2>
+    <ul class="entries">
+      <li>
+        <span class="e-name">Sharded PIR Design for the Ethereum State (with <a class="coauthor" href="https://atiia.xyz/" target="_blank" rel="noopener noreferrer">Ali Atiia</a>)</span>
+        <span class="e-detail">eth.research · 2026 · <a href="https://ethresear.ch/t/sharded-pir-design-for-the-ethereum-state/24552" target="_blank" rel="noopener noreferrer">link</a></span>
+      </li>
+      <li>
+        <span class="e-name">현대암호학의 태동 (The Dawn of Modern Cryptography, in Korean)</span>
+        <span class="e-detail">Horizon, KIAS webzine · 2025–2026 · <a href="https://horizon.kias.re.kr/30970/" target="_blank" rel="noopener noreferrer">part 1</a> · <a href="https://horizon.kias.re.kr/31730/" target="_blank" rel="noopener noreferrer">part 2</a> · <a href="https://horizon.kias.re.kr/32364/" target="_blank" rel="noopener noreferrer">part 3</a> · <a href="https://horizon.kias.re.kr/33039/" target="_blank" rel="noopener noreferrer">part 4</a></span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="honors">
+    <h2>Honors</h2>
+    <ul class="entries">
+      <li>
+        <span class="e-name">Distinguished Reviewer Award, IEEE S&amp;P 2026</span>
+        <span class="e-detail">IEEE Symposium on Security and Privacy · 2026</span>
+      </li>
+      <li>
+        <span class="e-name">Sejong Science Fellowship</span>
+        <span class="e-detail">National Research Foundation of Korea · 2024–2025</span>
+      </li>
+      <li>
+        <span class="e-name">Doctoral Dissertation Award (Best Award)</span>
+        <span class="e-detail">Korean Mathematical Society · 2024</span>
+      </li>
+      <li>
+        <span class="e-name">Doctoral Dissertation Award (Best Award)</span>
+        <span class="e-detail">College of Natural Sciences, Seoul National University · 2023</span>
+      </li>
+      <li>
+        <span class="e-name">Best Paper Runner-up, Asiacrypt 2019 (Invited to Journal of Cryptology)</span>
+        <span class="e-detail">International Association for Cryptologic Research · 2019</span>
+      </li>
+      <li>
+        <span class="e-name">Global Ph.D. Fellowship</span>
+        <span class="e-detail">National Research Foundation of Korea · 2018–2023</span>
+      </li>
+      <li>
+        <span class="e-name">First Place, iDASH Genomic Data Privacy &amp; Security Competition (<a href="https://humangenomeprivacy.org/2017/" target="_blank" rel="noopener noreferrer">link</a>)</span>
+        <span class="e-detail">iDASH National Center (NIH) · 2017</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="service">
+    <h2>Service</h2>
+    <ul class="entries">
+      <li>
+        <span class="e-name">Program Committee</span>
+        <span class="e-detail">Asiacrypt&nbsp;(2025,&nbsp;2026), IEEE&nbsp;S&amp;P&nbsp;(2026), ACM&nbsp;CCS&nbsp;(2026), USENIX&nbsp;Security&nbsp;(2027)</span>
+      </li>
+      <li>
+        <span class="e-name">Editorial Board</span>
+        <span class="e-detail">IACR&nbsp;CiC&nbsp;(2025)</span>
+      </li>
+    </ul>
+  </section>
+
+  </main>
+</div>
+</body>
+</html>

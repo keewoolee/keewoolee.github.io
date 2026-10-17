@@ -229,6 +229,11 @@ h3 {
 #view-selected:checked ~ .pubs li.so7 { order: 7; }
 #view-selected:checked ~ .pubs li.so8 { order: 8; }
 #view-selected:checked ~ .pubs li.so9 { order: 9; }
+#view-selected:checked ~ .pubs li.so10 { order: 10; }
+#view-selected:checked ~ .pubs li.so11 { order: 11; }
+#view-selected:checked ~ .pubs li.so12 { order: 12; }
+#view-selected:checked ~ .pubs li.so13 { order: 13; }
+#view-selected:checked ~ .pubs li.so14 { order: 14; }
 #view-early:checked ~ .pubs li:not(.early) { display: none; }
 #view-recent:checked ~ .pubs li:not(.recent) { display: none; }
 

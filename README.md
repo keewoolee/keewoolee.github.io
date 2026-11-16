@@ -15,7 +15,10 @@ style.css         # all styling
 assets/
   favicon.svg
   img/            # profile photos
-  pdf/            # CV and talk slides
+  pdf/
+    CV_KeewooLee.pdf
+    papers/       # paper PDFs, named by CV number (C23.pdf, B01.pdf, P03.pdf, ...)
+    slides/       # talk slides, named by CV number of the paper (C21.pdf, ...)
 ```
 
 ## Local preview

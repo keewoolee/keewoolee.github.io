@@ -233,7 +233,6 @@ h3 {
 #view-selected:checked ~ .pubs li.so11 { order: 11; }
 #view-selected:checked ~ .pubs li.so12 { order: 12; }
 #view-selected:checked ~ .pubs li.so13 { order: 13; }
-#view-selected:checked ~ .pubs li.so14 { order: 14; }
 #view-early:checked ~ .pubs li:not(.early) { display: none; }
 #view-recent:checked ~ .pubs li:not(.recent) { display: none; }
 
